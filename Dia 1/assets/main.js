@@ -56,3 +56,37 @@ function subtractNumbers(number1,number2){
 
 subtractNumbers(5,3);
 
+// Prompt is used to enter data
+function prompter(){
+    var input_Name = prompt("What's ur name?");
+    console.log("Nice to meet u " + input_Name);
+}
+
+//prompter();  outbreak function
+
+
+
+function confirmation(){
+    var question = confirm("You wanna search doggy");
+    if(question){
+        alert("Okey :DD");
+        window.open("https://www.google.com","__BLANK");
+        //window.location = "https://www.google.com";
+    }
+    else{
+        alert("No problem :DD");
+    }
+}
+
+function changeColor(newColor){
+    var elem = document.getElementById("Text");
+    elem.style.color = newColor;
+}
+
+function Accion (Tipo){
+    var elem = document.getElementById ("DivBotones");
+    if (Tipo == "Ocultar")
+    elem.style.display = 'none';
+    else
+    elem.style.display = '';
+}
