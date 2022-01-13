@@ -20,6 +20,8 @@ console.log(arreglo);
 arreglo.pop();
 console.log(arreglo);
 
+// ? Unshift: Agrega nuevos elementos y elimina elementos antiguos, los introduce al principio del array
+
 // ? Map
 // * Map es inmutable y nos retornara un nuevo arreglo. Recorre todo el arreglo y transformarlo a nuestra conveniencia.
 
@@ -112,13 +114,15 @@ var buscador = (parametro) => {
 
     return clients.filter((client) => client.nombre.includes(parametro));
 }
-console.log(buscador("o"));
+console.log(buscador("H"));
 
 // ? Join
 // * Es un método que nos ayuda a unir todos los elementos de un arreglo, oseas generar un string apartir de un elemento
 var elements = ["fuego","aire","agua"];
-var result = elements.join(' '); // ! Recibe como parámetro un caracter que quieres que lo separe.
+var result = elements.join(';'); // ! Recibe como parámetro un caracter que quieres que lo separe.
 console.log(result);
+
+// ? Value & Keys
 Object.value // Retorna los valores de un objeto
 Object.keys // Retorna las keys de un objeto.
 
@@ -127,3 +131,31 @@ Object.keys // Retorna las keys de un objeto.
 var numbers = [1,2,3,4,5,6];
 numbers.push(7);
 console.log(numbers);
+
+// ? IndexOf: Nos ayudara a buscar un elemento que queramos buscar su indice.
+let frutas = ["Manzana", "Banana"]
+
+frutas.forEach((element,index) => {
+    console.log(element,index);
+});
+
+console.log(frutas.indexOf("Manzana"));
+
+// ? Splice: Nos indica los números de elementos que queremos mostrar de un arreglo, en caso de no poner ningún valor entero, este nos retorna todo el array.
+
+let nombres = [
+    "Aldair",
+    "Azahid",
+    "Mau",
+    "Abril",
+    "Angeles",
+    "Eduardo",
+    "Joceline",
+    "Liliana",
+    "Bernardo"
+]
+nombres.splice();
+console.log(nombres);
+
+let nombresCopia = nombres.slice();
+console.log(nombresCopia);
