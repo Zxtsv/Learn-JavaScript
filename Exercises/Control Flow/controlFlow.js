@@ -12,7 +12,7 @@ function businessHours(dayNumber, hourNumber) {
 // janFirstDayNumber will be an int ranging from 0 to 6, representing the day of the week of January 1st.
 
 function getDayNumber(janFirstDayNumber, yearDayNumber) {
-    if(janFirstDayNumber>=0 && janFirstDayNumber<=7){
+    if(janFirstDayNumber>=0 && janFirstDayNumber<=6){
         return (yearDayNumber % 7);
     }
     else{
