@@ -37,7 +37,7 @@ temp.forEach(element => {
 carreritas.unshift("Federico"); // ! Añadiendo al primer lugar
 
 carreritas.forEach((element,index) => {
-    console.log(`Puesto ${index+1}: ${element}`);
+    console.log(`Puesto ${index+1}: ${element}`); // ! Imprimiendo puestos
 });
 
 
