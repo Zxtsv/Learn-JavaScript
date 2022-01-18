@@ -15,7 +15,7 @@ function selectContainer(){
     console.log(a);
     
     // 5
-    document.querySelector("#container").innerHTML = "Hello Mau, no te escuchamos";
+    //document.querySelector("#container").innerHTML = "Hello Mau, no te escuchamos";
 
     // 6
     document.querySelector(".footer").classList.add("main");
@@ -30,3 +30,14 @@ function selectContainer(){
 }
 
 selectContainer();
+
+// ! Challengue
+$(document).ready(
+    function(){
+        $("ol li").each(
+            function(){
+                console.log($(this).text());
+            }
+        );
+    }
+);
