@@ -1,7 +1,8 @@
 function selectContainer(){
+
     // 1
     document.getElementById("container").style.background = "red";
-
+    
     // 2
     document.querySelector("#container").style.background = "blue";
 
@@ -12,9 +13,9 @@ function selectContainer(){
     // 4
     let a = document.querySelector("ol .third");
     console.log(a);
-
+    
     // 5
-    // document.querySelector("#container").innerHTML = "Hello Mau, no te escuchamos";
+    document.querySelector("#container").innerHTML = "Hello Mau, no te escuchamos";
 
     // 6
     document.querySelector(".footer").classList.add("main");
@@ -26,7 +27,6 @@ function selectContainer(){
     let li = document.createElement("li");
     li.innerText = "four";
     document.querySelector("ul").appendChild(li);
-    
 }
 
 selectContainer();
