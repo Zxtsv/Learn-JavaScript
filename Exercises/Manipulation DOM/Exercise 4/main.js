@@ -27,6 +27,9 @@ function selectContainer(){
     let li = document.createElement("li");
     li.innerText = "four";
     document.querySelector("ul").appendChild(li);
+
+    //Challengue
+    document.querySelector(".footer").remove();
 }
 
 selectContainer();
