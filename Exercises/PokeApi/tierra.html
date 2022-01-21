@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medalla Tierra</title>
+    <script src="/pokemonApi.js"></script>
+
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-gap: 10px;
+          background-color: #4fc5e9;
+          padding: 10px;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid black;
+          text-align: center;
+          font-size: 30px;
+        }
+        </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Top 3 pokemón:</h1>
+    <div class="grid-container">
+        <div><div id = "elemento1"></div></div>
+        <div><div id = "elemento2"></div></div>
+        <div><div id = "elemento3"></div></div>  
+      </div>
+    <script src="pokemonApi.js"></script>
+</body>
+</html>
